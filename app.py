@@ -12,7 +12,6 @@ import glob
 import os
 
 
-# ... Your functions and model loading code ...
 def sift_image_similarity(img1, img2):
     # Initialize SIFT detector
     sift = cv2.SIFT_create()
@@ -79,7 +78,6 @@ def main():
                 st.write("Uploaded Image:")
                 st.image(img1, use_column_width=True)
 
-            # ... The rest of your code for image classification ...
             # Preprocess the user input image
             img = cv2.cvtColor(img1, cv2.COLOR_BGR2RGB)  # Convert BGR to RGB
 
@@ -101,7 +99,6 @@ def main():
             st.success(f"The uploaded image is similar to the reference image! Similarity Score: {similarity_score:.2f}")
 
             # Display the prediction
-            # st.write(f"Predicted Class: {prediction_class} - {prediction_label}")
             st.write("Probability Estimates:")
             for i, prob in enumerate(prediction_probs):
                 class_name = label_encoder.inverse_transform([i])[0]
