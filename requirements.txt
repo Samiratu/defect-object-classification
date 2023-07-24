@@ -83,3 +83,4 @@ Werkzeug==2.3.6
 wrapt==1.15.0
 xgboost==1.7.6
 zipp==3.16.2
+opencv-python-headless
